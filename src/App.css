@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  font-family: inherit;
+}
+
+/* Layout */
+.App {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(24, 65, 88, 0.9),
+    rgba(14, 216, 41, 0.9)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shadow-box {
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.404);
+}
+
+/* Calculator */
+.calculator {
+  height: 80vh;
+  width: 30%;
+  background-color: #fff;
+  font-family: inherit;
+}
+
+/* Screen */
+.screen {
+  height: 30vh;
+  width: 100%;
+  padding: 0 2rem;
+  color: #fff;
+  background-color: rgba(24, 65, 88, 0.9);
+}
+
+.memory {
+  margin-top: 5vh;
+  height: 85vh;
+  width: 30%;
+  font-family: inherit;
+  background-color: #fff;
+  overflow-y: scroll;
+}
+
+.memory-header {
+  background-color: rgba(24, 65, 88, 0.9);
+  font-size: 30px;
+  text-align: center;
+  font-family: inherit;
+  color: #fff;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.memory-bar {
+  font-family: inherit;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 15px 5px 0;
+}
+
+.computation-screen {
+  height: 6vh;
+  font-size: 2.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.error-screen {
+  background-color: rgba(175, 20, 20, 0.829);
+  width: 110.5%;
+  margin: 0 0 0 -20px;
+  padding-left: 5px;
+  font-size: 1.6rem;
+  height: 5vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.result-screen {
+  height: 19vh;
+  font-size: 8rem;
+  font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+/* Keypad */
+.keypad {
+  height: 55vh;
+  width: 100%;
+}
+
+.keypad--row {
+  height: 11vh;
+  width: 100%;
+  display: flex;
+  color: white;
+}
+
+/* Button */
+.btn {
+  width: 25%;
+  height: 100%;
+  font-size: 3rem;
+  font-family: inherit;
+  background-color: #fff;
+  border: 1px solid transparent;
+  display: flex;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover,
+.btn--large:hover,
+.btn--equal:hover {
+  color: #fff;
+  background-color: rgba(24, 65, 88, 0.9);
+}
+
+.btn--large,
+.btn--equal {
+  width: 25%;
+  color: rgba(24, 65, 88, 0.9);
+  height: 100%;
+  font-size: 3.5rem;
+  font-family: inherit;
+  background-color: #fff;
+  border: 1px solid transparent;
+  display: flex;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn--equal {
+  width: 50%;
+}
