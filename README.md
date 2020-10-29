@@ -1,6 +1,9 @@
 # calcu
 A calculator app made using ReactJS. Functionalities include +, -, *, /, % (modulus), CE, C, Backspace. Keyboard Digit Entry is also enabled. A history is included that displays a history of previous calculations. 
 
+Visit the following sandbox link to take a look:
+https://codesandbox.io/s/sp18-bcs-173-wasiq-qamar-forked-mvf1c
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
